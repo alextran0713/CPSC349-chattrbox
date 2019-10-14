@@ -1,0 +1,18 @@
+Upper Division Courses Needed: 12 unit left
+CPSC 323 
+CPSC 440 
+CPSC 471 
+CPSC 481 
+
+Customized Track: 15 unit left 
+
+CPSC 349 - Web Frond End Engineering  					
+CPSC 431 - Database and Application 					
+CPSC 476 - Web Back-End Engieering for Enterprise Application		
+CPSC 353 - Introduction to Computer Security ( If possible summer) 	
+CPSC 454 - Cloud Computing and Security					
+CPSC 456 - Netwrok Security Fundamentals
+CPSC 463 - Software Testing 							
+CPSC 477 - Introduction to Grid Computing
+CPSC 485 - Computational Bionformatics
+CPSC 495 - Internship in Computer Science 
