@@ -14,6 +14,10 @@ ws.on('connection', function(socket) {
   });
   socket.on('message', function(data) {
     console.log('message received: ' + data);
+    const io = require('socket.io') ();
+    io.path('/topic'){
+      console.log('Entering topic: ' + data);
+    }
     messages.push(data);
     ws.clients.forEach(function(clientSocket) {
       clientSocket.send(data)
