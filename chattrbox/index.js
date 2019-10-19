@@ -2,6 +2,7 @@ var http = require('http');
 var fs = require('fs');
 var extract = require('./extract');
 var wss = require('./websockets-server');
+const mime = require('mime');
 
 var handleError = function(err, res) {
   fs.readFile('app/error.html', function(err, data) {
@@ -22,5 +23,8 @@ var server = http.createServer(function(req, res) {
       res.end(data);
     }
   });
+  
+  var getMime = mime.getType(filePath)
+  console.log('Type of document is: ' + getMime);
 });
 server.listen(3000);
