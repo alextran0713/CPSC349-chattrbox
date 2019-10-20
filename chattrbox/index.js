@@ -1,7 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 var extract = require('./extract');
-var mime = require ('./mime');
+// var mime = require ('./mime');
 var wss = require('./websockets-server');
 const mime = require('mime');
 
@@ -21,12 +21,12 @@ var server = http.createServer(function(req, res) {
       handleError(err, res);
       return;
     } else {
-		res.setHeader('Content-Type',mine.getType(req.url));
+		// res.setHeader('Content-Type',mine.getType(req.url));
       res.end(data);
     }
   });
-  
- // var getMime = mime.getType(filePath)
- // console.log('Type of document is: ' + getMime);
+
+ var getMime = mime.getType(filePath)
+ console.log('Type of document is: ' + getMime);
 });
 server.listen(3000);
